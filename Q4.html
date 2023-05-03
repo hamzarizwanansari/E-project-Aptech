@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let shape = prompt("Enter any shape from the following:square,circle,triangle,rectangle");
+        if(shape == "rectangle"){
+            var length = prompt();
+            var width = prompt();
+            var area = length * width;
+            document.write("Area of rectangle is" + " " + area);
+        }
+        else if(shape == "square"){
+            var a1 = prompt();
+            var area = a1*a1;
+            document.write("area of square is" +" " + area);
+        }
+        else if(shape == "triangle"){
+            var base = prompt();
+            var height = prompt();
+            var area = 0.5*(base * height);
+            document.write("area of triangle is" +" " + area);
+        }
+        else if(shape == "circle"){
+            var r1 = prompt();
+            var area = 3.142*(r1 * r1);
+            document.write("area of triangle is" +" " + area);
+        }
+        else{
+            document.write("choose correct option");
+        }
+    </script>
+</body>
+</html>
